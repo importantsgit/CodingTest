@@ -16,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7BC3426B297A10CF001DB1B8 /* 11279.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = 11279.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		7BC363AF2977DE7800AECA78 /* practice_back.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = practice_back.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7BC363B22977DE7800AECA78 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7BC363B42977DE7800AECA78 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +25,15 @@
 		7BC363BB2977DE7900AECA78 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7BC363BE2977DE7900AECA78 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7BC363C02977DE7900AECA78 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7BC363C72977DE9800AECA78 /* 1946.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = 1946.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		7BF3CC2F2978BE55003F0F7A /* 1715.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = 1715.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		7BF3CC312978D64F003F0F7A /* MinHeap.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MinHeap.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		7BF3CC322978FBF6003F0F7A /* MaxHeap.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MaxHeap.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		7BF3CC3429791499003F0F7A /* Day2.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Day2.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		7BF3CC352979197F003F0F7A /* Day1.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Day1.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		7BF3CC3829792B6C003F0F7A /* Day2_1.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Day2_1.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		7BF3CC3929792C06003F0F7A /* Day2-2.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "Day2-2.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		7BF3CC3A29793186003F0F7A /* 1927.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = 1927.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,10 +47,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7BC3426A297A0F17001DB1B8 /* Priority queue */ = {
+			isa = PBXGroup;
+			children = (
+				7BF3CC3A29793186003F0F7A /* 1927.playground */,
+				7BC3426B297A10CF001DB1B8 /* 11279.playground */,
+			);
+			path = "Priority queue";
+			sourceTree = "<group>";
+		};
 		7BC363A62977DE7800AECA78 = {
 			isa = PBXGroup;
 			children = (
-				7BC363B12977DE7800AECA78 /* practice_back */,
+				7BF3CC3329791476003F0F7A /* codu */,
+				7BF3CC302978D622003F0F7A /* DataStructure */,
+				7BC363C62977DE8000AECA78 /* practice */,
+				7BC363B12977DE7800AECA78 /* trash */,
 				7BC363B02977DE7800AECA78 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -53,7 +75,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		7BC363B12977DE7800AECA78 /* practice_back */ = {
+		7BC363B12977DE7800AECA78 /* trash */ = {
 			isa = PBXGroup;
 			children = (
 				7BC363B22977DE7800AECA78 /* AppDelegate.swift */,
@@ -64,7 +86,37 @@
 				7BC363BD2977DE7900AECA78 /* LaunchScreen.storyboard */,
 				7BC363C02977DE7900AECA78 /* Info.plist */,
 			);
-			path = practice_back;
+			path = trash;
+			sourceTree = "<group>";
+		};
+		7BC363C62977DE8000AECA78 /* practice */ = {
+			isa = PBXGroup;
+			children = (
+				7BC3426A297A0F17001DB1B8 /* Priority queue */,
+				7BF3CC2F2978BE55003F0F7A /* 1715.playground */,
+				7BC363C72977DE9800AECA78 /* 1946.playground */,
+			);
+			path = practice;
+			sourceTree = "<group>";
+		};
+		7BF3CC302978D622003F0F7A /* DataStructure */ = {
+			isa = PBXGroup;
+			children = (
+				7BF3CC312978D64F003F0F7A /* MinHeap.playground */,
+				7BF3CC322978FBF6003F0F7A /* MaxHeap.playground */,
+			);
+			path = DataStructure;
+			sourceTree = "<group>";
+		};
+		7BF3CC3329791476003F0F7A /* codu */ = {
+			isa = PBXGroup;
+			children = (
+				7BF3CC352979197F003F0F7A /* Day1.playground */,
+				7BF3CC3429791499003F0F7A /* Day2.playground */,
+				7BF3CC3829792B6C003F0F7A /* Day2_1.playground */,
+				7BF3CC3929792C06003F0F7A /* Day2-2.playground */,
+			);
+			path = codu;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
