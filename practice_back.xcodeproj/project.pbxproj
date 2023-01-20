@@ -20,6 +20,8 @@
 		7BC3426F297A221F001DB1B8 /* Stack.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Stack.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		7BC34271297A2415001DB1B8 /* Queue.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Queue.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		7BC34272297A2C75001DB1B8 /* internet_Queue.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = internet_Queue.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		7BC34274297A364B001DB1B8 /* LinkedList.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = LinkedList.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		7BC34275297A555D001DB1B8 /* Doubly LinkedList.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "Doubly LinkedList.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		7BC363AF2977DE7800AECA78 /* practice_back.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = practice_back.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7BC363B22977DE7800AECA78 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7BC363B42977DE7800AECA78 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -94,6 +96,15 @@
 			path = Queue;
 			sourceTree = "<group>";
 		};
+		7BC34273297A3632001DB1B8 /* LinkedList */ = {
+			isa = PBXGroup;
+			children = (
+				7BC34274297A364B001DB1B8 /* LinkedList.playground */,
+				7BC34275297A555D001DB1B8 /* Doubly LinkedList.playground */,
+			);
+			path = LinkedList;
+			sourceTree = "<group>";
+		};
 		7BC363A62977DE7800AECA78 = {
 			isa = PBXGroup;
 			children = (
@@ -141,6 +152,7 @@
 			children = (
 				7BC3426E297A2211001DB1B8 /* Stack */,
 				7BC34270297A2403001DB1B8 /* Queue */,
+				7BC34273297A3632001DB1B8 /* LinkedList */,
 				7BC3426D297A1F42001DB1B8 /* Priority queue */,
 			);
 			path = DataStructure;

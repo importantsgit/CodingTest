@@ -25,60 +25,69 @@ enum MyError: Error {
     case Error
 }
 
-struct MaxHeap<T: Comparable> {
+struct MaxHeap<T: Comparable>{
+    //Comparable을 적용해야지 비교할 수 있음
+    
     var heap: [T] = []
     
-    init(zero: T) {
-        heap.append(zero)
+    init(trashZero: T) {
+        heap.append(trashZero)
     }
     
-    // 삽입
+    // 1. 제일 마지막 단말 노드에 데이터를 삽입한다.
     mutating func insert(of num: T) {
-        // 1. 마지막 노드에 숫자 삽입
         heap.append(num)
         var numIdx = heap.count - 1
-        // 2. 부모노드랑 현재 num노드랑 값을 비교하여 자신이 크다면 Swap
-        // 3. 2번 조건을 만족하지 않을 때까지 자신의 루트 노드가 아닐때 까지 반복
+        // 2. 부모 노드랑 계속 비교하면서 부모 노드가 자신보다 작다면 부모와 자신의 위치를 Swap
+        // 3. 2번 조건을 만족하지 않을 때까지 자신이 루트 노드가 아닐 때까지 반복
         while numIdx != 1 && num > heap[numIdx/2] {
-            changeNum(idx1: numIdx, idx2: numIdx/2)
-            numIdx = numIdx/2
+            changeNum(n1: numIdx, n2: numIdx/2)
+            numIdx /= 2
         }
     }
-    
+
     @discardableResult
-    mutating func popMax() -> T? {
-        // 1. 먼저 요소가 있는지 체크
-        if heap.count <= 1 {
-            print(MyError.noElement)
-            return nil
-        }
-        // 2. 마지막 요소와 첫번째 요소 체인지
-        changeNum(idx1: 1, idx2: heap.count-1)
-        let pop = heap.popLast()!
+    mutating func popMax() ->T? {
+        // 1. 가장 마지막 노드의 값과 루트 노드의 값을 Swap 해준다.
+        if heap.count <= 1 {return nil}
+        changeNum(n1: heap.count-1, n2: 1)
+        // 2. 가져올 최솟값을 미리 저장
+        let last = heap.popLast()!
+        // downHeap()
         // 3. 현재 노드에서 자식 노드와 비교하면서 자식 노드가 더 큰 값이면 Swap
         // 4. 위치를 찾을 때까지 3번 과정을 반복
         downHeap()
         
-        return pop
+        return last
     }
     
-    private mutating func changeNum(idx1:Int, idx2: Int) {
-        var changeNum = heap[idx1]
-        heap[idx1] = heap[idx2]
-        heap[idx2] = changeNum
-    }
-    
-    private mutating func downHeap() {
+    mutating private func downHeap() {
         var pIdx = 1
         while true {
             var cIdx = pIdx * 2
-            if cIdx+1 < heap.count && heap[cIdx] < heap[cIdx+1] {cIdx+=1}
-            if cIdx >= heap.count || heap[cIdx] < heap[pIdx] {break}
-            changeNum(idx1: pIdx, idx2: cIdx)
+            // 자식 노드 오른쪽 num < 자식 노드 왼쪽 num -> 오른쪽으로 인덱스 +1
+            // 더 작은 값이 위로 올라가야 하기 떄문
+            if cIdx+1 < heap.count && heap[cIdx] < heap[cIdx+1] { cIdx += 1 }
+            // 자식 노드가 부모 노드 num보다 크다면 while문 나가기
+            if cIdx >= heap.count || heap[cIdx] < heap[pIdx] { break }
+            // 바꾸기
+            changeNum(n1: cIdx, n2: pIdx)
+            // 인덱스 바꾸기
             pIdx = cIdx
         }
+    }
+    
+    mutating private func changeNum(n1: Int, n2: Int){
+        let c = heap[n1]
+        heap[n1] = heap[n2]
+        heap[n2] = c
     }
 }
 
 
-
+var maxHeap: MaxHeap = MaxHeap(trashZero: 0)
+var n = file.readInt()
+for _ in 0..<n {
+    var num = file.readInt()
+    num == 0 ? print(maxHeap.popMax() ?? 0) : maxHeap.insert(of: num)
+}
