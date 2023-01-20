@@ -17,6 +17,9 @@
 
 /* Begin PBXFileReference section */
 		7BC3426B297A10CF001DB1B8 /* 11279.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = 11279.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		7BC3426F297A221F001DB1B8 /* Stack.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Stack.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		7BC34271297A2415001DB1B8 /* Queue.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Queue.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		7BC34272297A2C75001DB1B8 /* internet_Queue.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = internet_Queue.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		7BC363AF2977DE7800AECA78 /* practice_back.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = practice_back.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7BC363B22977DE7800AECA78 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7BC363B42977DE7800AECA78 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -56,12 +59,48 @@
 			path = "Priority queue";
 			sourceTree = "<group>";
 		};
+		7BC3426C297A1EEF001DB1B8 /* Greedy */ = {
+			isa = PBXGroup;
+			children = (
+				7BF3CC2F2978BE55003F0F7A /* 1715.playground */,
+				7BC363C72977DE9800AECA78 /* 1946.playground */,
+			);
+			path = Greedy;
+			sourceTree = "<group>";
+		};
+		7BC3426D297A1F42001DB1B8 /* Priority queue */ = {
+			isa = PBXGroup;
+			children = (
+				7BF3CC312978D64F003F0F7A /* MinHeap.playground */,
+				7BF3CC322978FBF6003F0F7A /* MaxHeap.playground */,
+			);
+			path = "Priority queue";
+			sourceTree = "<group>";
+		};
+		7BC3426E297A2211001DB1B8 /* Stack */ = {
+			isa = PBXGroup;
+			children = (
+				7BC3426F297A221F001DB1B8 /* Stack.playground */,
+			);
+			path = Stack;
+			sourceTree = "<group>";
+		};
+		7BC34270297A2403001DB1B8 /* Queue */ = {
+			isa = PBXGroup;
+			children = (
+				7BC34271297A2415001DB1B8 /* Queue.playground */,
+				7BC34272297A2C75001DB1B8 /* internet_Queue.playground */,
+			);
+			path = Queue;
+			sourceTree = "<group>";
+		};
 		7BC363A62977DE7800AECA78 = {
 			isa = PBXGroup;
 			children = (
+				7BC363C02977DE7900AECA78 /* Info.plist */,
 				7BF3CC3329791476003F0F7A /* codu */,
 				7BF3CC302978D622003F0F7A /* DataStructure */,
-				7BC363C62977DE8000AECA78 /* practice */,
+				7BC363C62977DE8000AECA78 /* BaekJoon_ algorithm */,
 				7BC363B12977DE7800AECA78 /* trash */,
 				7BC363B02977DE7800AECA78 /* Products */,
 			);
@@ -84,26 +123,25 @@
 				7BC363B82977DE7800AECA78 /* Main.storyboard */,
 				7BC363BB2977DE7900AECA78 /* Assets.xcassets */,
 				7BC363BD2977DE7900AECA78 /* LaunchScreen.storyboard */,
-				7BC363C02977DE7900AECA78 /* Info.plist */,
 			);
 			path = trash;
 			sourceTree = "<group>";
 		};
-		7BC363C62977DE8000AECA78 /* practice */ = {
+		7BC363C62977DE8000AECA78 /* BaekJoon_ algorithm */ = {
 			isa = PBXGroup;
 			children = (
+				7BC3426C297A1EEF001DB1B8 /* Greedy */,
 				7BC3426A297A0F17001DB1B8 /* Priority queue */,
-				7BF3CC2F2978BE55003F0F7A /* 1715.playground */,
-				7BC363C72977DE9800AECA78 /* 1946.playground */,
 			);
-			path = practice;
+			path = "BaekJoon_ algorithm";
 			sourceTree = "<group>";
 		};
 		7BF3CC302978D622003F0F7A /* DataStructure */ = {
 			isa = PBXGroup;
 			children = (
-				7BF3CC312978D64F003F0F7A /* MinHeap.playground */,
-				7BF3CC322978FBF6003F0F7A /* MaxHeap.playground */,
+				7BC3426E297A2211001DB1B8 /* Stack */,
+				7BC34270297A2403001DB1B8 /* Queue */,
+				7BC3426D297A1F42001DB1B8 /* Priority queue */,
 			);
 			path = DataStructure;
 			sourceTree = "<group>";
