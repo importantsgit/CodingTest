@@ -32,6 +32,10 @@ class LinkedList<T:Equatable> {
     }
     
     func insert(data: T?, at index: Int) {
+        if count-1 < index {
+            print("노드리스트 범위를 벗어났습니다.")
+            return
+        }
         
         // head가 없는 경우 Node를 생성 후 head로 지정한다.
         if head == nil {

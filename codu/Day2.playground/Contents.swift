@@ -1,23 +1,22 @@
-var T = ["x","b","w","w","x","b","b","b","b","x","b","b","b","b"]
-var arr: [[String]] = []
-var idx: Int = 0
-var f: Int = 0
+var T = "xxwwwbxwxwbbbwwxxxwwbbbwwwwbb"
 
-func split() {
-    for i in 0..<T.count {
-        if T[i] == "x" {
-            idx += 4
-        }
+func reverse(str: String, idx: Int) -> String {
+    var idx = idx
+    let char: String = String(str[str.index(str.startIndex, offsetBy: idx)])
+    
+    if char != "x" {
+        return char
     }
-    var ar = T[0...idx]
-    arr.append(Array(ar))
-    idx = 0
-}
-for i in 0..<T.count {
-    while idx <= 20 {
-        if T[i] == "x" {
-            idx += 4
-        }
+    
+    var sub:[String] = []
+    idx += 1
+    
+    for i in 0..<4 {
+        sub[i] = reverse(str: str, idx: idx)
+        idx += sub[i].count
     }
+    
+    return char + sub[2] + sub[3] + sub[0] + sub[1]
 }
 
+print(reverse(str: T, idx: 0))

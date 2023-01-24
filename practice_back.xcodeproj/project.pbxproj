@@ -16,6 +16,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7BAC1FA9297CD2D400D3B424 /* Tree Traversal.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "Tree Traversal.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		7BAD6257297E5C64009A73D1 /* BST(BinarySearchTree).playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "BST(BinarySearchTree).playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		7BC3426B297A10CF001DB1B8 /* 11279.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = 11279.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		7BC3426F297A221F001DB1B8 /* Stack.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Stack.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		7BC34271297A2415001DB1B8 /* Queue.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Queue.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
@@ -31,6 +33,8 @@
 		7BC363BE2977DE7900AECA78 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7BC363C02977DE7900AECA78 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7BC363C72977DE9800AECA78 /* 1946.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = 1946.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		7BC655302980153D006D3626 /* File.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = File.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		7BC65532298015B3006D3626 /* Array.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Array.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		7BF3CC2F2978BE55003F0F7A /* 1715.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = 1715.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		7BF3CC312978D64F003F0F7A /* MinHeap.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MinHeap.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		7BF3CC322978FBF6003F0F7A /* MaxHeap.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MaxHeap.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
@@ -109,6 +113,7 @@
 			isa = PBXGroup;
 			children = (
 				7BC363C02977DE7900AECA78 /* Info.plist */,
+				7BC6553129801542006D3626 /* Example */,
 				7BF3CC3329791476003F0F7A /* codu */,
 				7BF3CC302978D622003F0F7A /* DataStructure */,
 				7BC363C62977DE8000AECA78 /* BaekJoon_ algorithm */,
@@ -147,6 +152,24 @@
 			path = "BaekJoon_ algorithm";
 			sourceTree = "<group>";
 		};
+		7BC6553129801542006D3626 /* Example */ = {
+			isa = PBXGroup;
+			children = (
+				7BC655302980153D006D3626 /* File.playground */,
+				7BC65532298015B3006D3626 /* Array.playground */,
+			);
+			path = Example;
+			sourceTree = "<group>";
+		};
+		7BDA7BE4297C2EF10050160A /* Tree */ = {
+			isa = PBXGroup;
+			children = (
+				7BAD6257297E5C64009A73D1 /* BST(BinarySearchTree).playground */,
+				7BAC1FA9297CD2D400D3B424 /* Tree Traversal.playground */,
+			);
+			path = Tree;
+			sourceTree = "<group>";
+		};
 		7BF3CC302978D622003F0F7A /* DataStructure */ = {
 			isa = PBXGroup;
 			children = (
@@ -154,6 +177,7 @@
 				7BC34270297A2403001DB1B8 /* Queue */,
 				7BC34273297A3632001DB1B8 /* LinkedList */,
 				7BC3426D297A1F42001DB1B8 /* Priority queue */,
+				7BDA7BE4297C2EF10050160A /* Tree */,
 			);
 			path = DataStructure;
 			sourceTree = "<group>";
