@@ -95,6 +95,8 @@ class BinarySearchTree<T: Comparable> {
         return currentNode
     }
     
+    
+    //MARK: 이 부분 다시 보기!!!!!!
     func remove(from data: T) -> Bool {
         guard let targetNode = searchNode(from: data) else {
             return false
@@ -120,19 +122,69 @@ class BinarySearchTree<T: Comparable> {
             while let nextNode = changeNode.left {
                 changeNode = nextNode 
             }
+            
+            changeNode.left = root?.left
+            changeNode.right = root?.right
+            root = changeNode
         }
     }
     
     func removeLeaf(_ node: Node<T>, data: T) {
-        
+        if node.parent?.left?.data == data { //왼쪽 노드일 경우
+            node.parent?.left = nil
+        } else { //오른쪽 노드일 경우
+            node.parent?.right = nil
+        }
+        node.parent = nil
     }
     
     func removeSingleChildNode(_ node: Node<T>, data: T) {
+        guard let parent = node.parent else { return }
         
+        if node.left != nil { //target의 왼쪽 노드가 존재하는 경우
+            if parent.data > data {
+                parent.left = node.left
+            } else {
+                parent.right = node.left
+            }
+            node.left?.parent = parent
+        } else { //target의 오른쪽 노드가 존재하는 경우
+            if parent.data > data {
+                parent.left = node.right
+            } else {
+                parent.right = node.right
+            }
+            node.right?.parent = parent
+        }
     }
     
     func removeFullNode(_ node: Node<T>, data: T){
+        guard let parent = node.parent else { return }
+        guard let rightNode = node.right else { return }
         
+        var changeNode = rightNode
+        while let nextNode = changeNode.left {
+            changeNode.parent = changeNode
+            changeNode = nextNode
+        }
+                
+        if let changeChildNode = changeNode.right {
+            //변경할 노드가 leaf가 아닌 경우 -> right 노드가 있는 경우
+            changeNode.parent?.right = changeChildNode
+            changeChildNode.parent = changeNode
+        } else {
+            changeNode.parent?.right = nil
+        }
+        
+        if parent.data > changeNode.data {
+            parent.left = changeNode
+        } else {
+            parent.right = changeNode
+        }
+        changeNode.parent = parent
+        
+        changeNode.left = node.left
+        changeNode.right = node.right
     }
     
     func drawDiagram() {

@@ -8,8 +8,11 @@ var arr1 = readLine()!.split(separator: " ").map { Int(String($0))! }
 
 
 
+
 // 배열 만들기
 var array = [Int](repeating: 0, count: 3)
+
+
 
 
 
@@ -20,9 +23,13 @@ arr.sort(by: >) // 원본 순서 변경 (내림차순) [3,2,1]
 
 
 
+
+
 // 배열 중 최소, 최대 찾기
 var min = arr.min()!
 var max = arr.max()!
+
+
 
 
 
@@ -49,3 +56,36 @@ for i in arr.indices.reversed() {
 }
 // 아니면 배열 자체를 뒤집고 정방향 순회 해도 됨
 
+
+
+
+// 이중 배열 사용하기
+/*
+ 3
+ 26 40 83
+ 49 60 57
+ 13 89 99
+ */
+
+let n = Int(readLine()!)!
+
+var house: [[Int]] = []
+
+for _ in stride(from: 0, to: n, by: 1) {
+    // stride from:x부터 to:n-1까지 by:1 만큼의 보폭으로 전진 ( 0~2의 배열 생성 )
+    house.append(readLine()!.split(separator: " ").map{ Int(String($0))! })
+}
+
+print(house)
+//[[26,40,83],[49,60,57],[13,89,99]]
+
+
+
+
+
+
+// 2차원 배열 1차원 배열로 만들기
+var arr4 = [[1,2,3],[2,3],[4]]
+let flatten = arr4.flatMap {$0} // [1,2,3,2,3,4]
+let reduced = arr4.reduce([], +) // [1,2,3,2,3,4]
+let joined = Array(arr4.joined()) // [1,2,3,2,3,4]
