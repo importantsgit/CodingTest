@@ -13,6 +13,7 @@
 		7BC363BA2977DE7800AECA78 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BC363B82977DE7800AECA78 /* Main.storyboard */; };
 		7BC363BC2977DE7900AECA78 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7BC363BB2977DE7900AECA78 /* Assets.xcassets */; };
 		7BC363BF2977DE7900AECA78 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BC363BD2977DE7900AECA78 /* LaunchScreen.storyboard */; };
+		7BC39B8E2980FC890092BB88 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7BC39B8D2980FC890092BB88 /* Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,10 +32,13 @@
 		7BC363B92977DE7800AECA78 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7BC363BB2977DE7900AECA78 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7BC363BE2977DE7900AECA78 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		7BC363C02977DE7900AECA78 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7BC363C72977DE9800AECA78 /* 1946.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = 1946.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		7BC39B842980AF020092BB88 /* Design_init&Convenience_init.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "Design_init&Convenience_init.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		7BC39B862980B8C30092BB88 /* 2042.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = 2042.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		7BC39B8B2980E5080092BB88 /* Graph.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Graph.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		7BC39B8D2980FC890092BB88 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7BC39B8F29811E6E0092BB88 /* BubbleSort.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = BubbleSort.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		7BC39B9129811E980092BB88 /* Sort.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Sort.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		7BC655302980153D006D3626 /* File.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = File.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		7BC65532298015B3006D3626 /* Array.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Array.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		7BC6553329801ACA006D3626 /* SegmentTree.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = SegmentTree.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
@@ -115,7 +119,7 @@
 		7BC363A62977DE7800AECA78 = {
 			isa = PBXGroup;
 			children = (
-				7BC363C02977DE7900AECA78 /* Info.plist */,
+				7BC39B8D2980FC890092BB88 /* Info.plist */,
 				7BC6553129801542006D3626 /* Example */,
 				7BF3CC3329791476003F0F7A /* codu */,
 				7BF3CC302978D622003F0F7A /* DataStructure */,
@@ -164,6 +168,23 @@
 			path = SegmentTree;
 			sourceTree = "<group>";
 		};
+		7BC39B8C2980E50E0092BB88 /* Graph */ = {
+			isa = PBXGroup;
+			children = (
+				7BC39B8B2980E5080092BB88 /* Graph.playground */,
+			);
+			path = Graph;
+			sourceTree = "<group>";
+		};
+		7BC39B9029811E780092BB88 /* Sort */ = {
+			isa = PBXGroup;
+			children = (
+				7BC39B9129811E980092BB88 /* Sort.playground */,
+				7BC39B8F29811E6E0092BB88 /* BubbleSort.playground */,
+			);
+			path = Sort;
+			sourceTree = "<group>";
+		};
 		7BC6553129801542006D3626 /* Example */ = {
 			isa = PBXGroup;
 			children = (
@@ -192,6 +213,8 @@
 				7BC34273297A3632001DB1B8 /* LinkedList */,
 				7BC3426D297A1F42001DB1B8 /* Priority queue */,
 				7BDA7BE4297C2EF10050160A /* Tree */,
+				7BC39B8C2980E50E0092BB88 /* Graph */,
+				7BC39B9029811E780092BB88 /* Sort */,
 			);
 			path = DataStructure;
 			sourceTree = "<group>";
@@ -265,6 +288,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7BC39B8E2980FC890092BB88 /* Info.plist in Resources */,
 				7BC363BF2977DE7900AECA78 /* LaunchScreen.storyboard in Resources */,
 				7BC363BC2977DE7900AECA78 /* Assets.xcassets in Resources */,
 				7BC363BA2977DE7800AECA78 /* Main.storyboard in Resources */,
@@ -356,6 +380,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = practice_back/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -410,6 +435,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = practice_back/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
