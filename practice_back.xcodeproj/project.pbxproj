@@ -18,6 +18,7 @@
 
 /* Begin PBXFileReference section */
 		7B9E47BE298265E60067CAAB /* Day3_2.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Day3_2.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		7B9E47C0298272650067CAAB /* 2839.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = 2839.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		7BAC1FA9297CD2D400D3B424 /* Tree Traversal.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "Tree Traversal.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		7BAD6257297E5C64009A73D1 /* BST(BinarySearchTree).playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "BST(BinarySearchTree).playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		7BC3426B297A10CF001DB1B8 /* 11279.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = 11279.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
@@ -65,6 +66,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7B9E47BF298272580067CAAB /* DP */ = {
+			isa = PBXGroup;
+			children = (
+				7B9E47C0298272650067CAAB /* 2839.playground */,
+			);
+			path = DP;
+			sourceTree = "<group>";
+		};
 		7BC3426A297A0F17001DB1B8 /* Priority queue */ = {
 			isa = PBXGroup;
 			children = (
@@ -156,6 +165,7 @@
 		7BC363C62977DE8000AECA78 /* BaekJoon_ algorithm */ = {
 			isa = PBXGroup;
 			children = (
+				7B9E47BF298272580067CAAB /* DP */,
 				7BC3426C297A1EEF001DB1B8 /* Greedy */,
 				7BC3426A297A0F17001DB1B8 /* Priority queue */,
 				7BC39B852980B8A00092BB88 /* SegmentTree */,
