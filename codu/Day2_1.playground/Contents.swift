@@ -38,9 +38,10 @@ func makeRec(left: Int, right: Int) -> Int {
         // 왼쪽으로 진행이 끝나면 왼쪽 최소 hegiht값이 오른쪽 최소 height값보다 작다면 오른쪽으로 진행해도 갱신이 안됨
         // 왼쪽 최소 = 1이라면 계속 hegiht값이 1임 -> 오른쪽 최소가 3이라도 진행이 안됨
         // 그러면 ret가 갱신 안되서 틀린 값이 return 됨
+        // low <= left 만약 low가 left에 걸치게 되면 True임으로 high값만 올라감
         if high < right && ( low <= left || arr[low - 1] < arr[high + 1] ) {
             high+=1
-            height = min(height, arr[high])
+            height = min(height,arr[high])
         } else {
             low-=1
             height = min(height,arr[low])

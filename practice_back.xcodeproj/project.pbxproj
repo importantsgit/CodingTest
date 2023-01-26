@@ -17,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7B9E47BE298265E60067CAAB /* Day3_2.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Day3_2.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		7BAC1FA9297CD2D400D3B424 /* Tree Traversal.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "Tree Traversal.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		7BAD6257297E5C64009A73D1 /* BST(BinarySearchTree).playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "BST(BinarySearchTree).playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		7BC3426B297A10CF001DB1B8 /* 11279.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = 11279.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
@@ -37,11 +38,12 @@
 		7BC39B862980B8C30092BB88 /* 2042.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = 2042.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		7BC39B8B2980E5080092BB88 /* Graph.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Graph.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		7BC39B8D2980FC890092BB88 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7BC39B8F29811E6E0092BB88 /* BubbleSort.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = BubbleSort.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		7BC39B9129811E980092BB88 /* Sort.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Sort.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		7BC655302980153D006D3626 /* File.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = File.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		7BC65532298015B3006D3626 /* Array.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Array.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		7BC6553329801ACA006D3626 /* SegmentTree.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = SegmentTree.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		7BCA55DF2982383200BD9063 /* Karasuba.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Karasuba.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		7BCA55E029825A1700BD9063 /* Day3_1.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Day3_1.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		7BF3CC2F2978BE55003F0F7A /* 1715.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = 1715.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		7BF3CC312978D64F003F0F7A /* MinHeap.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MinHeap.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		7BF3CC322978FBF6003F0F7A /* MaxHeap.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MaxHeap.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
@@ -124,6 +126,7 @@
 				7BF3CC3329791476003F0F7A /* codu */,
 				7BF3CC302978D622003F0F7A /* DataStructure */,
 				7BC363C62977DE8000AECA78 /* BaekJoon_ algorithm */,
+				7BCA55DB298237D700BD9063 /* Algorithm */,
 				7BC363B12977DE7800AECA78 /* trash */,
 				7BC363B02977DE7800AECA78 /* Products */,
 			);
@@ -180,7 +183,6 @@
 			isa = PBXGroup;
 			children = (
 				7BC39B9129811E980092BB88 /* Sort.playground */,
-				7BC39B8F29811E6E0092BB88 /* BubbleSort.playground */,
 			);
 			path = Sort;
 			sourceTree = "<group>";
@@ -193,6 +195,22 @@
 				7BC39B842980AF020092BB88 /* Design_init&Convenience_init.playground */,
 			);
 			path = Example;
+			sourceTree = "<group>";
+		};
+		7BCA55DB298237D700BD9063 /* Algorithm */ = {
+			isa = PBXGroup;
+			children = (
+				7BCA55DC298237E800BD9063 /* Karasuba */,
+			);
+			path = Algorithm;
+			sourceTree = "<group>";
+		};
+		7BCA55DC298237E800BD9063 /* Karasuba */ = {
+			isa = PBXGroup;
+			children = (
+				7BCA55DF2982383200BD9063 /* Karasuba.playground */,
+			);
+			path = Karasuba;
 			sourceTree = "<group>";
 		};
 		7BDA7BE4297C2EF10050160A /* Tree */ = {
@@ -226,6 +244,8 @@
 				7BF3CC3429791499003F0F7A /* Day2.playground */,
 				7BF3CC3829792B6C003F0F7A /* Day2_1.playground */,
 				7BF3CC3929792C06003F0F7A /* Day2-2.playground */,
+				7BCA55E029825A1700BD9063 /* Day3_1.playground */,
+				7B9E47BE298265E60067CAAB /* Day3_2.playground */,
 			);
 			path = codu;
 			sourceTree = "<group>";

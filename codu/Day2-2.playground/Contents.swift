@@ -9,13 +9,17 @@ var arr2:[Int] = []
 var count = 0
 
 // 변환
-for i in str1 {
-    arr1.append(i=="F" ? 0 : 1)
-}
+arr1 = str1.map{$0 == "F" ? 0 : 1}
+arr2 = str2.map{$0 == "F" ? 0 : 1}
 
-for i in str2 {
-    arr2.append(i=="F" ? 0 : 1)
-}
+str1 = str1.map{$0 == "F" ? "0" : "1"}.joined()
+str2 = str2.map{$0 == "F" ? "0" : "1"}.joined()
+print(str1)
+print(str2)
+var bi1 = UInt(str1)
+var bi2 = UInt(str2)
+
+
 
 // 계산
 for i in 0...arr2.count-arr1.count {
