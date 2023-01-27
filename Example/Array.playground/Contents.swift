@@ -11,7 +11,7 @@ var arr1 = readLine()!.split(separator: " ").map { Int(String($0))! }
 
 // 배열 만들기
 var array = [Int](repeating: 0, count: 3)
-
+print(array)
 
 
 
@@ -89,3 +89,5 @@ var arr4 = [[1,2,3],[2,3],[4]]
 let flatten = arr4.flatMap {$0} // [1,2,3,2,3,4]
 let reduced = arr4.reduce([], +) // [1,2,3,2,3,4]
 let joined = Array(arr4.joined()) // [1,2,3,2,3,4]
+
+

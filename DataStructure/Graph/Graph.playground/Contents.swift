@@ -32,43 +32,60 @@ import Foundation
 
  */
 
-
 let graph = AdjacencyList<Int>()
-// 노드 생성
-let a = graph.createVertex(data: 1)
-let b = graph.createVertex(data: 2)
-let c = graph.createVertex(data: 3)
-let d = graph.createVertex(data: 4)
-let e = graph.createVertex(data: 5)
-let f = graph.createVertex(data: 6)
-
-// 연결
-graph.add(.undirected, from: a, to: b, weight: 300)
-graph.add(.undirected, from: c, to: b, weight: 100)
-graph.add(.undirected, from: d, to: b, weight: 400)
-graph.add(.undirected, from: e, to: b, weight: 100)
-graph.add(.undirected, from: f, to: b, weight: 2300)
-graph.add(.undirected, from: a, to: d, weight: 140)
-
-print(graph.description)
-
 let graph2 = AdjacencyMatrix<Int>()
 
-let one = graph2.createVertex(data: 1)
-let two = graph2.createVertex(data: 2)
-let thr = graph2.createVertex(data: 3)
-let fou = graph2.createVertex(data: 4)
-let fiv = graph2.createVertex(data: 5)
-let six = graph2.createVertex(data: 6)
 
-graph2.add(.undirected, from: one, to: two, weight: 300)
-graph2.add(.undirected, from: thr, to: two, weight: 100)
-graph2.add(.undirected, from: fou, to: two, weight: 400)
-graph2.add(.undirected, from: fiv, to: two, weight: 100)
-graph2.add(.undirected, from: six, to: two, weight: 2300)
-graph2.add(.undirected, from: one, to: two, weight: 140)
 
-print(graph2.description)
+func makeAdjacencyList() {
+    // 노드 생성
+    let a = graph.createVertex(data: 1)
+    let b = graph.createVertex(data: 2)
+    let c = graph.createVertex(data: 3)
+    let d = graph.createVertex(data: 4)
+    let e = graph.createVertex(data: 5)
+    let f = graph.createVertex(data: 6)
 
-graph2.DepthFirstSearch(source: one)
+    // 연결
+    graph.add(.undirected, from: a, to: b, weight: 300)
+    graph.add(.undirected, from: c, to: b, weight: 100)
+    graph.add(.undirected, from: d, to: b, weight: 400)
+    graph.add(.undirected, from: e, to: b, weight: 100)
+    graph.add(.undirected, from: f, to: b, weight: 2300)
+    graph.add(.undirected, from: a, to: d, weight: 140)
+
+    print(graph.description)
+}
+
+func makeAdjacencyMatrix() {
+    // 노드 생성
+    let a = graph2.createVertex(data: 1)
+    let b = graph2.createVertex(data: 2)
+    let c = graph2.createVertex(data: 3)
+    let d = graph2.createVertex(data: 4)
+    let e = graph2.createVertex(data: 5)
+
+    //연결
+    graph2.add(.directed, from: a, to: b, weight: 4)
+    graph2.add(.directed, from: a, to: c, weight: 2)
+    graph2.add(.directed, from: a, to: d, weight: 5)
+    graph2.add(.directed, from: b, to: c, weight: 1)
+    graph2.add(.directed, from: b, to: e, weight: 4)
+    graph2.add(.directed, from: c, to: a, weight: 1)
+    graph2.add(.directed, from: c, to: b, weight: 3)
+    graph2.add(.directed, from: c, to: d, weight: 1)
+    graph2.add(.directed, from: c, to: e, weight: 2)
+    graph2.add(.directed, from: d, to: a, weight: -2)
+    graph2.add(.directed, from: d, to: e, weight: 2)
+    graph2.add(.directed, from: e, to: b, weight: -3)
+    graph2.add(.directed, from: e, to: c, weight: 3)
+    graph2.add(.directed, from: e, to: d, weight: 1)
+    
+    // print(graph2.description)
+    
+    graph2.shortestPath()
+}
+
+makeAdjacencyMatrix()
+
 

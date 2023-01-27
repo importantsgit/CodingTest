@@ -21,6 +21,8 @@
 		7B9E47C0298272650067CAAB /* 2839.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = 2839.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		7BAC1FA9297CD2D400D3B424 /* Tree Traversal.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "Tree Traversal.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		7BAD6257297E5C64009A73D1 /* BST(BinarySearchTree).playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "BST(BinarySearchTree).playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		7BAFFAB729835F9700E3ABE7 /* Floyd-Warshall.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "Floyd-Warshall.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		7BAFFAB92983C66300E3ABE7 /* MatrixChain.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MatrixChain.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		7BC3426B297A10CF001DB1B8 /* 11279.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = 11279.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		7BC3426F297A221F001DB1B8 /* Stack.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Stack.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		7BC34271297A2415001DB1B8 /* Queue.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Queue.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
@@ -70,6 +72,15 @@
 			isa = PBXGroup;
 			children = (
 				7B9E47C0298272650067CAAB /* 2839.playground */,
+			);
+			path = DP;
+			sourceTree = "<group>";
+		};
+		7BAFFAB829835F9D00E3ABE7 /* DP */ = {
+			isa = PBXGroup;
+			children = (
+				7BAFFAB729835F9700E3ABE7 /* Floyd-Warshall.playground */,
+				7BAFFAB92983C66300E3ABE7 /* MatrixChain.playground */,
 			);
 			path = DP;
 			sourceTree = "<group>";
@@ -210,6 +221,7 @@
 		7BCA55DB298237D700BD9063 /* Algorithm */ = {
 			isa = PBXGroup;
 			children = (
+				7BAFFAB829835F9D00E3ABE7 /* DP */,
 				7BCA55DC298237E800BD9063 /* Karasuba */,
 			);
 			path = Algorithm;
