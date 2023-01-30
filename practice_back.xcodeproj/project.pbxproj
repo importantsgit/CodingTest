@@ -21,6 +21,9 @@
 		7B9E47C0298272650067CAAB /* 2839.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = 2839.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		7BAC1FA9297CD2D400D3B424 /* Tree Traversal.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "Tree Traversal.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		7BAD6257297E5C64009A73D1 /* BST(BinarySearchTree).playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "BST(BinarySearchTree).playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		7BAFCA08298760760027F906 /* EditDistance.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = EditDistance.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		7BAFCA0929877A160027F906 /* Character.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Character.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		7BAFCA0A2987A4F40027F906 /* String.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = String.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		7BAFFAB729835F9700E3ABE7 /* Floyd-Warshall.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "Floyd-Warshall.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		7BAFFAB92983C66300E3ABE7 /* MatrixChain.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MatrixChain.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		7BC3426B297A10CF001DB1B8 /* 11279.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = 11279.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
@@ -81,6 +84,7 @@
 			children = (
 				7BAFFAB729835F9700E3ABE7 /* Floyd-Warshall.playground */,
 				7BAFFAB92983C66300E3ABE7 /* MatrixChain.playground */,
+				7BAFCA08298760760027F906 /* EditDistance.playground */,
 			);
 			path = DP;
 			sourceTree = "<group>";
@@ -214,6 +218,8 @@
 				7BC655302980153D006D3626 /* File.playground */,
 				7BC65532298015B3006D3626 /* Array.playground */,
 				7BC39B842980AF020092BB88 /* Design_init&Convenience_init.playground */,
+				7BAFCA0929877A160027F906 /* Character.playground */,
+				7BAFCA0A2987A4F40027F906 /* String.playground */,
 			);
 			path = Example;
 			sourceTree = "<group>";
