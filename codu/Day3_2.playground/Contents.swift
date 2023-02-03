@@ -1,8 +1,8 @@
-var arr = [["he?p","help"],["he?p","heap"],["he?p","helpp"],["*p*","help"],["*p*","papa"],["*p*","hello"]]
+var arr = [["he?p","help"],["he?p","heap"],["he?p","helpp"],["*p*","help"],["*p*","papa"],["*p*","hello"],["a*a*a*a*a*a*a*a*a*a*a*a*a*a*a*a*a*a*a*a*a*a*a*a*a*a*a*a*a*a*a", "ahfjsdhfjkdshfkjdshfkdsaojajfjaljaflkajflkdsaljflkaflsaffasfa54656454aafasfsdafsaaaaaaaaaaaaaaaaaaaa"],["******a","abcdea"]]
 
 //MARK: - 와일드 카드 함수
 
-func wildCard2(compare arr1: String,with arr2: String)->Bool {
+func wildCard(compare arr1: String,with arr2: String)->Bool {
     let c1 = arr1.count - 1, c2 = arr2.count - 1
     var char: Character = "A", compare: Character = "A"
     var s1 = 0, s2 = 0 // 인덱스
@@ -25,50 +25,81 @@ func wildCard2(compare arr1: String,with arr2: String)->Bool {
     
     return false
 }
-
-var strings: [String] = []
-
-for item in arr {
-    if wildCard2(compare: item[0], with: item[1]) {
-        strings.append(item[1])
-    }
-}
-strings.sort(by: <)
-
-print(strings)
+// 안되는 케이스: a*a*a*a*a*a*a*a*a*a*a*a*a*a*a*a*a*a*a*a*a*a*a*a*a*a*a*a*a*a*a / ******a
 
 //MARK: - 2번째
-func wildCard3(str1: String, str2: String){
-    var str1 = ""
-    var str2 = ""
+func wildCard2(str1: String, str2: String, idx1: Int, idx2: Int)->Bool{
+    var idx1 = idx1, idx2 = idx2
+
+    if str1.count <= idx1 && str2.count > idx2 { return false } // 비교할 문자열 순환 끝났을때
+    if str1.count > idx1 && str2.count == idx2 && str1.count - idx1 > 1 { return str1.substring(from: idx1, to: str1.count-1).filter({ $0 != "*" }).isEmpty }
+    // *xN 만 남았을때 true / 다른 문자가 남았을때 false
+    if (str1.count <= idx1 && str2.count <= idx2) || (str1.count - idx1 == 1 && str1.last == "*") { return true }   // 두 문자열 순환이 끝났을때
+    
+    if str1.findIndex(from: idx1) == str2.findIndex(from: idx2) || str1.findIndex(from: idx1) == "?" {
+        idx1 += 1
+        idx2 += 1
+        if wildCard2(str1: str1, str2: str2, idx1: idx1, idx2: idx2) { return true }
+    } else if str1.findIndex(from: idx1) == "*" {
+        for i in 0..<str2.count - idx2 { if wildCard2(str1: str1, str2: str2, idx1: idx1+1, idx2: i+idx2) { return true } }
+    }
+    return false
 }
-
-
 
 //MARK: - 3번째 ** 만 있다면
 enum MyError: Error {
     case noValue
 }
 
-var str = "*ap*ap*ap*appppp*"
-
-var str2 = "apdsapapapppp"
-
-func checkStar(compare s1: String,with s2: String) throws -> Bool {
+func checkStar(compare s1: String,with s2: String) -> Bool {
     var str2 = s2
     var arr = s1.split(separator: "*")
     for item in arr {
-        do {
-            guard let index = str2.firstRange(of: item) else { throw MyError.noValue }
-            str2 = String(str2[index.upperBound...])
-        } catch MyError.noValue {
-            print("Out Of Range")
-            return false
-        }
+        guard let index = str2.firstRange(of: item) else { return false }
+        str2 = String(str2[index.upperBound...])
     }
     return true
 }
 
-// try print(checkStar(compare: str, with: str2))
 
 
+//MARK: - 플레이
+enum wildStatus {
+    case brute
+    case recursion
+}
+
+func printWildCard(status: wildStatus, compare arr: [[String]]){
+    var strings: [String] = []
+    switch status {
+    case .brute:
+        for item in arr {
+            if !item[0].contains(where: {$0=="?"}) && checkStar(compare: item[0], with: item[1]) {
+                strings.append(item[1])
+            } else if wildCard(compare: item[0], with: item[1]) {
+                strings.append(item[1])
+            }
+        }
+        print("Brute")
+
+    case .recursion:
+        for item in arr {
+            if !item[0].contains(where: {$0=="?"}) && checkStar(compare: item[0], with: item[1]) {
+                strings.append(item[1])
+            } else if wildCard2(str1: item[0], str2: item[1], idx1: 0, idx2: 0) {
+                strings.append(item[1])
+            }
+        }
+        print("Recursion")
+    }
+    strings.sort(by: <)
+    print(strings)
+    print("\n\n")
+}
+
+if checkStar(compare: arr[6][0], with: arr[6][1]) {
+   print("checkStar\n\n")
+}
+
+printWildCard(status: .brute, compare: arr)
+printWildCard(status: .recursion, compare: arr)

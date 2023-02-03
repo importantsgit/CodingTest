@@ -91,3 +91,23 @@ let reduced = arr4.reduce([], +) // [1,2,3,2,3,4]
 let joined = Array(arr4.joined()) // [1,2,3,2,3,4]
 
 
+
+// 출력하는 함수
+func printArray(arr: [[Int]]) {
+    var grid: [String] = []
+    for i in 0..<arr.count {
+        var row = ""
+        for j in 0..<arr.first!.count {
+            let value = arr[i][j]
+            if value != 1000000 {
+                row += "\(value) \t"
+            } else {
+                row += "INF\t"
+            }
+        }
+        grid.append(row)
+    }
+
+    let edgesDescription = grid.joined(separator: "\n\n")
+    print(edgesDescription)
+}

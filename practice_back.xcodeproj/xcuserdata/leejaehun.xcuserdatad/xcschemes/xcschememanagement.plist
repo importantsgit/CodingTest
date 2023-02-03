@@ -44,7 +44,7 @@
 			<key>isShown</key>
 			<false/>
 			<key>orderHint</key>
-			<integer>10</integer>
+			<integer>2</integer>
 		</dict>
 		<key>1715 (Playground) 1.xcscheme</key>
 		<dict>
@@ -93,7 +93,7 @@
 			<key>isShown</key>
 			<false/>
 			<key>orderHint</key>
-			<integer>23</integer>
+			<integer>10</integer>
 		</dict>
 		<key>1927 (Playground) 1.xcscheme</key>
 		<dict>
@@ -142,7 +142,7 @@
 			<key>isShown</key>
 			<false/>
 			<key>orderHint</key>
-			<integer>1</integer>
+			<integer>17</integer>
 		</dict>
 		<key>1946 (Playground) 1.xcscheme</key>
 		<dict>
@@ -191,7 +191,7 @@
 			<key>isShown</key>
 			<false/>
 			<key>orderHint</key>
-			<integer>27</integer>
+			<integer>16</integer>
 		</dict>
 		<key>2042 (Playground) 1.xcscheme</key>
 		<dict>
@@ -212,7 +212,7 @@
 			<key>isShown</key>
 			<false/>
 			<key>orderHint</key>
-			<integer>7</integer>
+			<integer>25</integer>
 		</dict>
 		<key>2839 (Playground) 1.xcscheme</key>
 		<dict>
@@ -233,7 +233,7 @@
 			<key>isShown</key>
 			<false/>
 			<key>orderHint</key>
-			<integer>24</integer>
+			<integer>9</integer>
 		</dict>
 		<key>Array (Playground) 1.xcscheme</key>
 		<dict>
@@ -254,7 +254,7 @@
 			<key>isShown</key>
 			<false/>
 			<key>orderHint</key>
-			<integer>14</integer>
+			<integer>13</integer>
 		</dict>
 		<key>BST(BinarySearchTree) (Playground) 1.xcscheme</key>
 		<dict>
@@ -275,7 +275,28 @@
 			<key>isShown</key>
 			<false/>
 			<key>orderHint</key>
-			<integer>3</integer>
+			<integer>30</integer>
+		</dict>
+		<key>BackPack (Playground) 1.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+			<key>orderHint</key>
+			<integer>35</integer>
+		</dict>
+		<key>BackPack (Playground) 2.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+			<key>orderHint</key>
+			<integer>36</integer>
+		</dict>
+		<key>BackPack (Playground).xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+			<key>orderHint</key>
+			<integer>6</integer>
 		</dict>
 		<key>BubbleSort (Playground).xcscheme</key>
 		<dict>
@@ -303,7 +324,7 @@
 			<key>isShown</key>
 			<false/>
 			<key>orderHint</key>
-			<integer>34</integer>
+			<integer>12</integer>
 		</dict>
 		<key>DP (Playground) 1.xcscheme</key>
 		<dict>
@@ -347,6 +368,27 @@
 			<key>orderHint</key>
 			<integer>29</integer>
 		</dict>
+		<key>DPCoinChange (Playground) 1.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+			<key>orderHint</key>
+			<integer>41</integer>
+		</dict>
+		<key>DPCoinChange (Playground) 2.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+			<key>orderHint</key>
+			<integer>42</integer>
+		</dict>
+		<key>DPCoinChange (Playground).xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+			<key>orderHint</key>
+			<integer>40</integer>
+		</dict>
 		<key>Day1 (Playground) 1.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -366,7 +408,7 @@
 			<key>isShown</key>
 			<false/>
 			<key>orderHint</key>
-			<integer>25</integer>
+			<integer>1</integer>
 		</dict>
 		<key>Day2 (Playground) 1.xcscheme</key>
 		<dict>
@@ -387,7 +429,7 @@
 			<key>isShown</key>
 			<false/>
 			<key>orderHint</key>
-			<integer>26</integer>
+			<integer>34</integer>
 		</dict>
 		<key>Day2-2 (Playground) 1.xcscheme</key>
 		<dict>
@@ -408,7 +450,7 @@
 			<key>isShown</key>
 			<false/>
 			<key>orderHint</key>
-			<integer>20</integer>
+			<integer>24</integer>
 		</dict>
 		<key>Day2_1 (Playground).xcscheme</key>
 		<dict>
@@ -436,7 +478,7 @@
 			<key>isShown</key>
 			<false/>
 			<key>orderHint</key>
-			<integer>13</integer>
+			<integer>7</integer>
 		</dict>
 		<key>Day3_2 (Playground) 1.xcscheme</key>
 		<dict>
@@ -457,7 +499,49 @@
 			<key>isShown</key>
 			<false/>
 			<key>orderHint</key>
-			<integer>19</integer>
+			<integer>20</integer>
+		</dict>
+		<key>Day4_1 (Playground) 1.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+			<key>orderHint</key>
+			<integer>36</integer>
+		</dict>
+		<key>Day4_1 (Playground) 2.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+			<key>orderHint</key>
+			<integer>37</integer>
+		</dict>
+		<key>Day4_1 (Playground).xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+			<key>orderHint</key>
+			<integer>5</integer>
+		</dict>
+		<key>Day4_2 (Playground) 1.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+			<key>orderHint</key>
+			<integer>39</integer>
+		</dict>
+		<key>Day4_2 (Playground) 2.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+			<key>orderHint</key>
+			<integer>40</integer>
+		</dict>
+		<key>Day4_2 (Playground).xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+			<key>orderHint</key>
+			<integer>35</integer>
 		</dict>
 		<key>Design_init&amp;Convenience_init (Playground) 1.xcscheme</key>
 		<dict>
@@ -478,14 +562,14 @@
 			<key>isShown</key>
 			<false/>
 			<key>orderHint</key>
-			<integer>29</integer>
+			<integer>23</integer>
 		</dict>
 		<key>Doubly LinkedList (Playground).xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 			<key>orderHint</key>
-			<integer>5</integer>
+			<integer>29</integer>
 		</dict>
 		<key>EditDistance (Playground) 1.xcscheme</key>
 		<dict>
@@ -555,14 +639,14 @@
 			<key>isShown</key>
 			<false/>
 			<key>orderHint</key>
-			<integer>2</integer>
+			<integer>4</integer>
 		</dict>
 		<key>Floyd-Warshall (Playground).xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 			<key>orderHint</key>
-			<integer>17</integer>
+			<integer>32</integer>
 		</dict>
 		<key>Graph (Playground) 1.xcscheme</key>
 		<dict>
@@ -604,7 +688,7 @@
 			<key>isShown</key>
 			<false/>
 			<key>orderHint</key>
-			<integer>9</integer>
+			<integer>28</integer>
 		</dict>
 		<key>IterativeInorderTraversal (Playground) 1.xcscheme</key>
 		<dict>
@@ -646,14 +730,35 @@
 			<key>isShown</key>
 			<false/>
 			<key>orderHint</key>
-			<integer>21</integer>
+			<integer>22</integer>
 		</dict>
 		<key>LinkedList (Playground).xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 			<key>orderHint</key>
-			<integer>30</integer>
+			<integer>33</integer>
+		</dict>
+		<key>Math (Playground) 1.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+			<key>orderHint</key>
+			<integer>38</integer>
+		</dict>
+		<key>Math (Playground) 2.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+			<key>orderHint</key>
+			<integer>39</integer>
+		</dict>
+		<key>Math (Playground).xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+			<key>orderHint</key>
+			<integer>37</integer>
 		</dict>
 		<key>MatrixChain (Playground) 1.xcscheme</key>
 		<dict>
@@ -674,7 +779,7 @@
 			<key>isShown</key>
 			<false/>
 			<key>orderHint</key>
-			<integer>12</integer>
+			<integer>36</integer>
 		</dict>
 		<key>MaxHeap (Playground) 1.xcscheme</key>
 		<dict>
@@ -702,7 +807,7 @@
 			<key>isShown</key>
 			<false/>
 			<key>orderHint</key>
-			<integer>15</integer>
+			<integer>18</integer>
 		</dict>
 		<key>MinHeap (Playground) 1.xcscheme</key>
 		<dict>
@@ -730,7 +835,7 @@
 			<key>isShown</key>
 			<false/>
 			<key>orderHint</key>
-			<integer>18</integer>
+			<integer>21</integer>
 		</dict>
 		<key>MyPlayground (Playground) 1.xcscheme</key>
 		<dict>
@@ -772,7 +877,7 @@
 			<key>isShown</key>
 			<false/>
 			<key>orderHint</key>
-			<integer>6</integer>
+			<integer>11</integer>
 		</dict>
 		<key>SegmentTree (Playground) 1.xcscheme</key>
 		<dict>
@@ -793,7 +898,7 @@
 			<key>isShown</key>
 			<false/>
 			<key>orderHint</key>
-			<integer>16</integer>
+			<integer>27</integer>
 		</dict>
 		<key>Sort (Playground) 1.xcscheme</key>
 		<dict>
@@ -856,7 +961,7 @@
 			<key>isShown</key>
 			<false/>
 			<key>orderHint</key>
-			<integer>11</integer>
+			<integer>19</integer>
 		</dict>
 		<key>Stack (Playground) 1.xcscheme</key>
 		<dict>
@@ -877,7 +982,7 @@
 			<key>isShown</key>
 			<false/>
 			<key>orderHint</key>
-			<integer>28</integer>
+			<integer>14</integer>
 		</dict>
 		<key>String (Playground) 1.xcscheme</key>
 		<dict>
@@ -898,7 +1003,7 @@
 			<key>isShown</key>
 			<false/>
 			<key>orderHint</key>
-			<integer>37</integer>
+			<integer>3</integer>
 		</dict>
 		<key>Tree Traversal (Playground) 1.xcscheme</key>
 		<dict>
@@ -919,7 +1024,7 @@
 			<key>isShown</key>
 			<false/>
 			<key>orderHint</key>
-			<integer>22</integer>
+			<integer>15</integer>
 		</dict>
 		<key>day2_2 (Playground) 1.xcscheme</key>
 		<dict>
@@ -947,7 +1052,7 @@
 			<key>isShown</key>
 			<false/>
 			<key>orderHint</key>
-			<integer>4</integer>
+			<integer>26</integer>
 		</dict>
 		<key>practice_back.xcscheme_^#shared#^_</key>
 		<dict>

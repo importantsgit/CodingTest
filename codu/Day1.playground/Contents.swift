@@ -37,9 +37,32 @@ func makeNum(_ array:inout [Int],_ buttonNum: Int,_ curCnt: Int) {
 }
 
 // 배열 1당 함수 호출 및 print() -> 자동 개행
-for i in 0..<arr.count {
-    cnt = INF
-    makeNum(&arr[i], 0, 0)
+//for i in 0..<arr.count {
+//    cnt = INF
+//    makeNum(&arr[i], 0, 0)
+//    // 만약 최솟값이 안나왔다면 -1 반환
+//    print(cnt == INF ? -1 : cnt)
+//}
+
+
+func makeNum2(_ array:[Int],_ buttonNum: Int)->Int {
+
+    var clock = array
+    if buttonNum == 10 { return clock.contains(where: {$0 != 12}) ? INF : 0 }
+    var ret = INF
+    
+    for cnt in 0..<4 {
+
+        ret = min(ret, cnt + makeNum2(clock, buttonNum + 1))
+
+        for b in buttons[buttonNum] {clock[b] = clock[b] == 12 ? 3 : clock[b] + 3}
+    }
+    return ret
+}
+
+for clock in arr {
+
+    var cnt = makeNum2(clock, 0)
     // 만약 최솟값이 안나왔다면 -1 반환
     print(cnt == INF ? -1 : cnt)
 }

@@ -1,5 +1,3 @@
-// Int형 인덱스로 만들기
-
 extension String {
     public func substring(from: Int, to: Int) -> String {
         guard from < count, to >= 0, to - from >= 0 else {
@@ -15,7 +13,7 @@ extension String {
     }
     
     public func findIndex(from num: Int) -> String {
-        guard num <= count, num >= 0 else {
+        guard num < count, num >= 0 else {
             return ""
         }
         if num == 0 {

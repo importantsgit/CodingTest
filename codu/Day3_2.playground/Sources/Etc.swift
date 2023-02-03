@@ -1,5 +1,3 @@
-// Int형 인덱스로 만들기
-
 extension String {
     public func substring(from: Int, to: Int) -> String {
         guard from < count, to >= 0, to - from >= 0 else {
