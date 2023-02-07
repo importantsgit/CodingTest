@@ -103,3 +103,28 @@ if checkStar(compare: arr[6][0], with: arr[6][1]) {
 
 printWildCard(status: .brute, compare: arr)
 printWildCard(status: .recursion, compare: arr)
+
+
+//MARK: - 와일드 카드 정답
+
+func wildCard3(str1: String, str2: String, idx1: Int, idx2: Int)->Bool{
+    var idx1 = idx1, idx2 = idx2
+
+    if str1.count <= idx1 && str2.count > idx2 { return false } // 비교할 문자열 순환 끝났을때
+    if str1.count > idx1 && str2.count == idx2 && str1.count - idx1 > 1 { return str1.substring(from: idx1, to: str1.count-1).filter({ $0 != "*" }).isEmpty }
+    // *xN 만 남았을때 true / 다른 문자가 남았을때 false
+    if (str1.count <= idx1 && str2.count <= idx2) || (str1.count - idx1 == 1 && str1.last == "*") { return true }   // 두 문자열 순환이 끝났을때
+    while str1.count <= idx1 || str2.count <= idx2 {
+        idx1 += 1
+        idx2 += 1
+    }
+    
+    if str1.findIndex(from: idx1) == str2.findIndex(from: idx2) || str1.findIndex(from: idx1) == "?" {
+        idx1 += 1
+        idx2 += 1
+        if wildCard2(str1: str1, str2: str2, idx1: idx1, idx2: idx2) { return true }
+    } else if str1.findIndex(from: idx1) == "*" {
+        for i in 0..<str2.count - idx2 { if wildCard2(str1: str1, str2: str2, idx1: idx1+1, idx2: i+idx2) { return true } }
+    }
+    return false
+}

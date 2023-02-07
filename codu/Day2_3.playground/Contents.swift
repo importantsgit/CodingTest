@@ -14,11 +14,6 @@ arr2 = str2.map{$0 == "F" ? 0 : 1}
 
 str1 = str1.map{$0 == "F" ? "0" : "1"}.joined()
 str2 = str2.map{$0 == "F" ? "0" : "1"}.joined()
-print(str1)
-print(str2)
-var bi1 = UInt(str1)
-var bi2 = UInt(str2)
-
 
 
 // 계산

@@ -1,3 +1,5 @@
+import Foundation
+
 /*
  MARK: 소수점
  ceil(값) = 소수점 올림
@@ -23,7 +25,6 @@
  fma(Double, Double, Double) = (1*2+3) ?? 이게 왜 필요하지?
  2.isMultiple(of: 2) // 짝수반환
  */
-import Foundation
 
 print(pow(2.0,4.0)) // 2의 4승 = 16
 print(sqrt(16.0)) // 4

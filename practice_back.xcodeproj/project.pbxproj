@@ -19,6 +19,9 @@
 /* Begin PBXFileReference section */
 		7B9E47BE298265E60067CAAB /* Day3_2.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Day3_2.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		7B9E47C0298272650067CAAB /* 2839.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = 2839.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		7BA765312991CDA20072B5A4 /* 1439.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = 1439.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		7BA765322991D22F0072B5A4 /* 16953.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = 16953.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		7BA765332991E4B70072B5A4 /* 1339.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = 1339.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		7BA8AC592989FD690010ECD8 /* BackPack.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = BackPack.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		7BAC1FA9297CD2D400D3B424 /* Tree Traversal.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "Tree Traversal.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		7BAD6257297E5C64009A73D1 /* BST(BinarySearchTree).playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "BST(BinarySearchTree).playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
@@ -55,13 +58,14 @@
 		7BCA55E029825A1700BD9063 /* Day3_1.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Day3_1.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		7BCA7F7C298B899300107855 /* Day4_1.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Day4_1.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		7BCA7F7F298B9B7C00107855 /* Day4_2.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Day4_2.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		7BD1B13029907AB500DC9D60 /* Day1_1.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Day1_1.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		7BF3CC2F2978BE55003F0F7A /* 1715.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = 1715.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		7BF3CC312978D64F003F0F7A /* MinHeap.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MinHeap.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		7BF3CC322978FBF6003F0F7A /* MaxHeap.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MaxHeap.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
-		7BF3CC3429791499003F0F7A /* Day2.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Day2.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
-		7BF3CC352979197F003F0F7A /* Day1.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Day1.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
-		7BF3CC3829792B6C003F0F7A /* Day2_1.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Day2_1.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
-		7BF3CC3929792C06003F0F7A /* Day2-2.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "Day2-2.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		7BF3CC3429791499003F0F7A /* Day2_1.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Day2_1.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		7BF3CC352979197F003F0F7A /* Day1_2.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Day1_2.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		7BF3CC3829792B6C003F0F7A /* Day2_2.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Day2_2.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		7BF3CC3929792C06003F0F7A /* Day2_3.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Day2_3.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		7BF3CC3A29793186003F0F7A /* 1927.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = 1927.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 /* End PBXFileReference section */
 
@@ -110,6 +114,9 @@
 			children = (
 				7BF3CC2F2978BE55003F0F7A /* 1715.playground */,
 				7BC363C72977DE9800AECA78 /* 1946.playground */,
+				7BA765312991CDA20072B5A4 /* 1439.playground */,
+				7BA765322991D22F0072B5A4 /* 16953.playground */,
+				7BA765332991E4B70072B5A4 /* 1339.playground */,
 			);
 			path = Greedy;
 			sourceTree = "<group>";
@@ -276,10 +283,11 @@
 		7BF3CC3329791476003F0F7A /* codu */ = {
 			isa = PBXGroup;
 			children = (
-				7BF3CC352979197F003F0F7A /* Day1.playground */,
-				7BF3CC3429791499003F0F7A /* Day2.playground */,
-				7BF3CC3829792B6C003F0F7A /* Day2_1.playground */,
-				7BF3CC3929792C06003F0F7A /* Day2-2.playground */,
+				7BD1B13029907AB500DC9D60 /* Day1_1.playground */,
+				7BF3CC352979197F003F0F7A /* Day1_2.playground */,
+				7BF3CC3429791499003F0F7A /* Day2_1.playground */,
+				7BF3CC3829792B6C003F0F7A /* Day2_2.playground */,
+				7BF3CC3929792C06003F0F7A /* Day2_3.playground */,
 				7BCA55E029825A1700BD9063 /* Day3_1.playground */,
 				7B9E47BE298265E60067CAAB /* Day3_2.playground */,
 				7BCA7F7C298B899300107855 /* Day4_1.playground */,
