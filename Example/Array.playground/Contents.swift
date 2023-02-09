@@ -71,9 +71,13 @@ let n = Int(readLine()!)!
 
 var house: [[Int]] = []
 
-for _ in stride(from: 0, to: n, by: 1) {
+for _ in stride(from: 0, to: n, by: 1) { // 마지막 n은 출력 xx 0..<n
     // stride from:x부터 to:n-1까지 by:1 만큼의 보폭으로 전진 ( 0~2의 배열 생성 )
     house.append(readLine()!.split(separator: " ").map{ Int(String($0))! })
+}
+
+for _ in stride(from: 0, through: n, by: 1) { // 마지막 n은 출력 oo 0...n
+    
 }
 
 print(house)
