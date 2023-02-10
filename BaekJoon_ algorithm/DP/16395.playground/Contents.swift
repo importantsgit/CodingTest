@@ -13,17 +13,19 @@ func printArray(arr: [[Int]]) {
         }
         grid.append(row)
     }
-
     let edgesDescription = grid.joined(separator: "\n\n")
     print(edgesDescription)
 }
 
-var DP = Array(repeating: Array(repeating: 1, count: 6), count: 6)
-
-for i in 1..<DP.count {
-    for j in 1..<DP.count - i {
-        DP[i][j] = DP[i-1][j] + DP[i][j-1]
+func pascal(arr:[Int]) {
+    if arr[1] == 1 || arr[0] == 2 || arr[0] == arr[1] { print(1);return }
+    var DP = Array(repeating: Array(repeating: 1, count: arr[0]), count: arr[0])
+    for i in 1..<DP.count {
+        for j in 1..<DP.count - i {
+            DP[i][j] = DP[i-1][j] + DP[i][j-1]
+            if  i == arr[0]-arr[1] && j == arr[1]-1 {print(DP[i][j]);return}
+        }
     }
 }
 
-printArray(arr: DP)
+pascal(arr: readLine()!.split(separator: " ").map{Int(String($0))!})

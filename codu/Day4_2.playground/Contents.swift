@@ -8,7 +8,7 @@ var arrs = [[1, 744, 755, 4, 897, 902, 890, 6, 777],[3, 3, 3, 1, 2, 3, 2, 2, 2, 
 
 func quantization(arr: [Int]) -> Int {
     //MARK:  배열을 나눴을때 제일 작은 오차제곱 합
-    // 평균값 구하기ㅂ
+    // 평균값 구하기
     var qNum = Int(round(Double(arr.reduce(0, +))/Double(arr.count)))
     // 오차제곱 합
     var num = arr.map({($0-qNum)*($0-qNum)}).reduce(0, +)

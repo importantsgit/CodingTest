@@ -19,6 +19,9 @@
 /* Begin PBXFileReference section */
 		7B9E47BE298265E60067CAAB /* Day3_2.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Day3_2.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		7B9E47C0298272650067CAAB /* 2839.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = 2839.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		7BA35D982995CF520005E0A9 /* 15312.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = 15312.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		7BA35D992995D77E0005E0A9 /* 19947.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = 19947.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		7BA35D9A29961B550005E0A9 /* 25644.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = 25644.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		7BA765312991CDA20072B5A4 /* 1439.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = 1439.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		7BA765322991D22F0072B5A4 /* 16953.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = 16953.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		7BA765332991E4B70072B5A4 /* 1339.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = 1339.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
@@ -106,6 +109,9 @@
 				7BAF88F32994BFEB00A6C5E3 /* 14916.playground */,
 				7BAF88F62994DE8B00A6C5E3 /* 13301.playground */,
 				7BAF88F72994E52800A6C5E3 /* 16395.playground */,
+				7BA35D982995CF520005E0A9 /* 15312.playground */,
+				7BA35D992995D77E0005E0A9 /* 19947.playground */,
+				7BA35D9A29961B550005E0A9 /* 25644.playground */,
 			);
 			path = DP;
 			sourceTree = "<group>";
