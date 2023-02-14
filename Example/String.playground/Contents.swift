@@ -25,4 +25,12 @@ extension String {
         let find = index(self.startIndex, offsetBy: num)
         return String(self[find])
     }
+    
+    public mutating func splitFrom(idx: Int)->String {
+        if idx > self.count && idx < 0 { return self }
+        var startIdx = index(self.startIndex, offsetBy: idx)
+        var str = String(self[startIdx...])
+        self = String(self[self.startIndex..<startIdx])
+        return str
+    }
 }

@@ -60,10 +60,27 @@ func makeNum2(_ array:[Int],_ buttonNum: Int)->Int {
     return ret
 }
 
-for clock in arr {
+//for clock in arr {
+//
+//    var cnt = makeNum2(clock, 0)
+//    // 만약 최솟값이 안나왔다면 -1 반환
+//    print(cnt == INF ? -1 : cnt)
+//}
 
-    var cnt = makeNum2(clock, 0)
-    // 만약 최솟값이 안나왔다면 -1 반환
-    print(cnt == INF ? -1 : cnt)
+
+//MARK: - 시험
+
+func clockTime(_ clocks: [Int],_ ccnt: Int)->Int {
+    var clocks = clocks
+    if ccnt > 9 { return clocks.contains(where: {$0 != 12}) ? INF : 0 }
+    var ret = INF
+    for click in 0..<4 {
+        ret = min(ret, click+clockTime(clocks, ccnt+1))
+        for b in buttons[ccnt] {
+            clocks[b] = clocks[b] == 12 ? 3 : clocks[b] + 3
+        }
+    }
+    return ret
 }
 
+print(clockTime(arr[0], 0))

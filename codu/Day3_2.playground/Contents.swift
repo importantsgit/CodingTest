@@ -97,12 +97,12 @@ func printWildCard(status: wildStatus, compare arr: [[String]]){
     print("\n\n")
 }
 
-if checkStar(compare: arr[6][0], with: arr[6][1]) {
-   print("checkStar\n\n")
-}
-
-printWildCard(status: .brute, compare: arr)
-printWildCard(status: .recursion, compare: arr)
+//if checkStar(compare: arr[6][0], with: arr[6][1]) {
+//   print("checkStar\n\n")
+//}
+//
+//printWildCard(status: .brute, compare: arr)
+//printWildCard(status: .recursion, compare: arr)
 
 
 //MARK: - 와일드 카드 정답
@@ -128,3 +128,57 @@ func wildCard3(str1: String, str2: String, idx1: Int, idx2: Int)->Bool{
     }
     return false
 }
+
+//MARK: - 시험
+func printArray(arr: [[Int]]) {
+    var grid: [String] = []
+    for i in 0..<arr.count {
+        var row = ""
+        for j in 0..<arr.first!.count {
+            let value = arr[i][j]
+            if value != 1000000 {
+                row += "\(value) \t"
+            } else {
+                row += "INF\t"
+            }
+        }
+        grid.append(row)
+    }
+
+    let edgesDescription = grid.joined(separator: "\n\n")
+    print(edgesDescription)
+}
+
+var wild = "*p*"
+var str = "help"
+
+var cache: [[Int]] = [[Int]](repeating: [Int](repeating: -1, count: str.count+1), count: wild.count+1)
+
+func wildCard4(_ w:Int,_ s:Int)->Bool{
+    var w=w,s=s
+    var ret = cache[w][s]
+    if ret != -1 {return (ret==1)} // 만약 현재 위치가 true라면 true 방출 -> 0이면 한번 검색한 것이기 때문에 패스
+    while w<wild.count && s<str.count && (wild.findIndex(from: w) == str.findIndex(from: s) || wild.findIndex(from: w) == "?") {
+        w+=1
+        s+=1
+    }
+    if w==wild.count {
+        cache[w][s] = s==str.count ? 1:0
+        return s==str.count
+    }
+    if wild.findIndex(from: w)=="*" {
+        for i in 0...str.count-s {
+            if wildCard4(w+1, s+i){
+                cache[w][s] = 1
+                return true
+            }
+        }
+    }
+    cache[w][s] = 0
+    return false
+}
+
+wildCard4(0, 0)
+
+printArray(arr: cache)
+

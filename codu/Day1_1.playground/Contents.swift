@@ -37,3 +37,20 @@ func startBoggle(strings: [String]) {
 }
 
 startBoggle(strings: strings)
+
+
+
+
+//MARK: - 시험
+
+func bogglegame(_ xy:[Int],_ str:[String])->Bool {
+    if xy[0]>4||xy[0]<0||xy[1]>4||xy[1]<4 {return false}
+    if boggleBoard[xy[0]][xy[1]] != str.first! {return false}
+    if str.isEmpty {return true}
+    for i in -1...1 {
+        for j in -1...1 {
+            if xy[0] != 0&&xy[1] != 0&&bogglegame([xy[0]+i,xy[1]+j],Array(str[1...])) {return true}
+        }
+    }
+    return false
+}

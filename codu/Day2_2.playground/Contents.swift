@@ -52,8 +52,31 @@ func makeRec(left: Int, right: Int) -> Int {
     return ret
 }
 
-arr = [7,1,5,9,6,7,3]
-print(makeRec(left: 0, right: arr.count - 1))
+//arr = [7,1,5,9,6,7,3]
+//print(makeRec(left: 0, right: arr.count - 1))
+//
+//arr = [1,4,4,10000,4,1,1]
+//print(makeRec(left: 0, right: arr.count - 1))
 
-arr = [1,4,4,10000,4,1,1]
-print(makeRec(left: 0, right: arr.count - 1))
+//MARK: - 중간고사
+
+func Rec(_ start: Int,_ end: Int)->Int {
+    if start == end {return start}
+    var mid = (start+end)/2
+    var ret = min(Rec(start, mid), Rec(mid+1, end))
+    var low=mid,high=mid+1
+    var height = min(low,high)
+    ret = max(ret, height*2)
+    while 0<low || high<end {
+        if high < end && (low < 0 || arr[low-1] < arr[high+1]) {
+            high += 1
+            height = min(height, arr[high])
+        } else {
+            low -= 1
+            height = min(height, arr[low])
+        }
+    }
+    return max(ret, height*(high-low+1))
+}
+arr = [7,1,5,9,6,7,3]
+print(0,arr.count-1)

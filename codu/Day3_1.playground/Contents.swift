@@ -37,3 +37,12 @@ print(game2(i: 0, j: 0, count: 0))
 
 
 // cache ?? 
+
+
+//MARK: - 시험
+func jumpGame(x:Int, y:Int)->Bool {
+    if arr[0].count<x||arr.count<y {return false}
+    var xyNum = arr[y][x]
+    if xyNum == 0 || jumpGame(x: xyNum+x, y: y) || jumpGame(x: x, y: y+xyNum) {return true}
+    return false
+}
