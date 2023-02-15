@@ -83,4 +83,5 @@ func clockTime(_ clocks: [Int],_ ccnt: Int)->Int {
     return ret
 }
 
-print(clockTime(arr[0], 0))
+// print(clockTime(arr[0], 0))
+

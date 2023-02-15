@@ -1761,6 +1761,27 @@
 			<key>orderHint</key>
 			<integer>20</integer>
 		</dict>
+		<key>middle (Playground) 1.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+			<key>orderHint</key>
+			<integer>76</integer>
+		</dict>
+		<key>middle (Playground) 2.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+			<key>orderHint</key>
+			<integer>77</integer>
+		</dict>
+		<key>middle (Playground).xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+			<key>orderHint</key>
+			<integer>75</integer>
+		</dict>
 		<key>practice_back.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>

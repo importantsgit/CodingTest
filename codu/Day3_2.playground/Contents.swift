@@ -130,45 +130,31 @@ func wildCard3(str1: String, str2: String, idx1: Int, idx2: Int)->Bool{
 }
 
 //MARK: - 시험
-func printArray(arr: [[Int]]) {
-    var grid: [String] = []
-    for i in 0..<arr.count {
-        var row = ""
-        for j in 0..<arr.first!.count {
-            let value = arr[i][j]
-            if value != 1000000 {
-                row += "\(value) \t"
-            } else {
-                row += "INF\t"
-            }
-        }
-        grid.append(row)
-    }
+var str1 = "he?p"
+var str2 = "help"
+var strs = [str1,str2]
+var cache = [[Int]](repeating: [Int](repeating: -1, count: strs[1].count+1), count: strs[0].count+1)
 
-    let edgesDescription = grid.joined(separator: "\n\n")
-    print(edgesDescription)
+extension String {
+    func findTo(_ i: Int)-> String {
+        if i<0 || self.count<i {return ""}
+        var idx = index(self.startIndex, offsetBy: i)
+        return String(self[idx])
+    }
 }
 
-var wild = "*p*"
-var str = "help"
-
-var cache: [[Int]] = [[Int]](repeating: [Int](repeating: -1, count: str.count+1), count: wild.count+1)
-
-func wildCard4(_ w:Int,_ s:Int)->Bool{
+func wildCard(_ strs:[String],_ w: Int,_ s:Int)->Bool {
     var w=w,s=s
     var ret = cache[w][s]
-    if ret != -1 {return (ret==1)} // 만약 현재 위치가 true라면 true 방출 -> 0이면 한번 검색한 것이기 때문에 패스
-    while w<wild.count && s<str.count && (wild.findIndex(from: w) == str.findIndex(from: s) || wild.findIndex(from: w) == "?") {
-        w+=1
-        s+=1
+    if ret != -1 {return ret==1}
+    while w<strs[0].count && s<strs[1].count && (strs[0].findTo(w)==strs[1].findTo(s) || strs[0].findTo(w)=="?") {w+=1;s+=1}
+    if w == strs[0].count {
+        cache[w][s] = s == strs[1].count ? 1 : 0
+        return s == strs[1].count
     }
-    if w==wild.count {
-        cache[w][s] = s==str.count ? 1:0
-        return s==str.count
-    }
-    if wild.findIndex(from: w)=="*" {
-        for i in 0...str.count-s {
-            if wildCard4(w+1, s+i){
+    if strs[0].findTo(w)=="*"{
+        for i in 0...strs[1].count-s {
+            if wildCard(strs, w+1, s+i) {
                 cache[w][s] = 1
                 return true
             }
@@ -178,7 +164,4 @@ func wildCard4(_ w:Int,_ s:Int)->Bool{
     return false
 }
 
-wildCard4(0, 0)
-
-printArray(arr: cache)
-
+print(wildCard(strs, 0, 0))

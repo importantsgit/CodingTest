@@ -34,3 +34,18 @@ extension String {
         return str
     }
 }
+
+// MARK: - 옵셔널 타입으로 안정성 UP
+extension String {
+    func findTo(_ i:Int)->String? {
+        if i<0 || self.count<=i {print("findTo() function is not working");return nil}
+        var idx = index(self.startIndex, offsetBy: i)
+        return String(self[idx])
+    }
+    func splitTo(_ i:Int,from j:Int)->String? {
+        if i<0 || j<i || self.count <= j {print("splitTo() function is not working");return nil}
+        var startIdx = index(self.startIndex, offsetBy: i)
+        var endIdx = index(self.startIndex, offsetBy: j)
+        return String(self[startIdx...endIdx])
+    }
+}

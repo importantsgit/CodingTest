@@ -59,67 +59,27 @@ for arr in arrs {
 // 쪼개진 배열의 가장 큰 수와 가장 작은 수의 차이를 구해서 이 값이 크다면 오차가 큰 배열을 나누는 방식으로
 // DP에 저장된 값이 있으면 스킵
 
-//MARK: - https://bba-dda.tistory.com/14
-var n = 0
+//MARK: -
 
-// 0번째 수부터 i번째 수까지 합을 저장
-var pSum: [Int] = [Int](repeating: -1, count: 101)
 
-var pSqSum: [Int] = [Int](repeating: -1, count: 101)
+// import Foundation
+var cache = [[Int]](repeating: [Int](repeating: -1, count: 10), count: 100)
 
-var cache: [[Int]] = [[Int]](repeating: [Int](repeating: -1, count: 11), count: 101)
-
-var INF = 987654321
-
-// start end까지 한 묶음일 때 (하나의 숫자로 양자화 할 때) 가능한 최소의 오차 리턴
-func minError(start: Int, end: Int)->Int {
-    var sum = 0, sqSum = 0
-    if start == 0 {
-        sum = pSum[end]
-        sqSum = pSqSum[end]
-    } else {
-        sum = pSum[end] - pSum[start-1]
-        sqSum = pSqSum[end] - pSqSum[start-1]
-    }
-    // start와 end사이의 수들을 평균값을 반올림한 수로 양자화
-    var m = Int(floor(0.5 + Double(sum / (end - start + 1))))
-    var result = sqSum - 2 * m * sum + m * m * (end - start + 1)
+func getResult(_ arr:[Int])->Int {
+    var minusN = Int(round(Double(arr.reduce(0, +))/Double(arr.count)))
+    var result = arr.map{($0-minusN)*($0-minusN)}.reduce(0, +)
     return result
 }
 
-// start 부터 숫자들을 parts개의 묶음으로 분리할 때 가능한 최소의 error return
-func quantize(start: Int, parts: Int)->Int {
-    if start == n {return 0}
-    if parts == 0 {return INF}
-    var ret = cache[start][parts]
-    if (ret != -1) {return ret}
-    ret = INF
-    // 해당 묶음의 길이를 변화시키면서 최솟값 찾기
-    for size in 1..<n {
-        ret = min(ret, minError(start: start, end: start+size-1) + quantize(start: start+size, parts: parts-1))
+func quantization(_ arr:[Int],_ pos:Int,_ parts:Int)->Int {
+    if pos == arr.count {return 0}
+    if parts == 0 {return 987654321}
+    if cache[pos][parts] != -1 {return cache[pos][parts]}
+    cache[pos][parts] = 987654321
+    for i in 1...arr.count-pos {
+        cache[pos][parts] = min(cache[pos][parts], quantization(arr, pos+i, parts-1)+getResult(Array(arr[pos..<(pos+i)])))
     }
-    return ret
+    return cache[pos][parts]
 }
 
-func initquantize(arr: [Int], parts: Int){
-    var arr = arr.sorted()
-    pSum[0] = arr[0]
-    pSqSum[0] = arr[0] * arr[0]
-    n = arr.count
-    for i in 1..<n {
-        pSum[i] = pSum[i-1]+arr[i]
-        pSqSum[i] = pSqSum[i-1]+arr[i]*arr[i]
-    }
-    print(quantize(start: 0, parts: parts))
-}
-
-for arr in arrs {
-    initquantize(arr: arr, parts: 3)
-}
-
-/*
-인터넷에 나와있는 코드를 이해하려고 했으나
-완벽하게 이해를 하지 못했습니다.
- - DP 메모제이션
-수요일 안으로 이해하고 코드를 다시 짜보겠습니다.
-*/
+print(quantization([1, 744, 755, 4, 897, 902, 890, 6, 777].sorted(), 0, 3))

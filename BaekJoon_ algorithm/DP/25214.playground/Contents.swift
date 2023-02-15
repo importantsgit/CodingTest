@@ -5,9 +5,11 @@
 
 
 var cache = Array(repeating: -1, count: 200000)
-//var arr = [50,100,70,110,10,100] // 6
+var arr2 = [50,100,70,110,10,100].sorted() // 6
 
-func pasta(_ start: Int)-> Int {
+
+// 차이가 제일 큰 값 찾기
+func pasta(_ arr:[Int],_ start: Int)-> Int {
     print("\(start): a.c-1 \(arr.count-1)")
     if start == arr.count-1 {return 0}
     if cache[start] != -1 {return cache[start]}
@@ -19,16 +21,15 @@ func pasta(_ start: Int)-> Int {
     if minus > 0 { ret = minus }
     for i in 1..<arr.count-start {
         print("\(start): minus\(arr.count-start)")
-        cache[start] = max(ret, pasta(start+i))
+        cache[start] = max(ret, pasta(arr2, start+i))
     }
     return cache[start]
 }
 
-//pasta(0)
+pasta(arr2,0)
+// 사실상 이럴 필요까지는 없다
 
-//print(cache)
 
-// 이건 무슨 식임 ㄷㄷ
 import Foundation
 
 final class FileIO {
