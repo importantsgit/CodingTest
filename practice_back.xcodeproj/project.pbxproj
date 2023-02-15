@@ -39,6 +39,9 @@
 		7BAFCA0A2987A4F40027F906 /* String.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = String.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		7BAFFAB729835F9700E3ABE7 /* Floyd-Warshall.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "Floyd-Warshall.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		7BAFFAB92983C66300E3ABE7 /* MatrixChain.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MatrixChain.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		7BB1F392299C6312006DB1F6 /* 25214.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = 25214.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		7BB1F393299C741C006DB1F6 /* 24417.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = 24417.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		7BB1F394299C79C0006DB1F6 /* Day4_2_P.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Day4_2_P.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		7BBB3C33298C8B4A00649DB5 /* Math.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Math.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		7BBB3C34298CAA8500649DB5 /* DPCoinChange.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = DPCoinChange.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		7BC3426B297A10CF001DB1B8 /* 11279.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = 11279.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
@@ -129,6 +132,8 @@
 				7BC9545B299B468200873128 /* 15624.playground */,
 				7BC9545C299B4CF100873128 /* 15489.playground */,
 				7BC9545D299B5C7600873128 /* 14606.playground */,
+				7BB1F392299C6312006DB1F6 /* 25214.playground */,
+				7BB1F393299C741C006DB1F6 /* 24417.playground */,
 			);
 			path = DP;
 			sourceTree = "<group>";
@@ -338,6 +343,7 @@
 				7BC9545E299B757400873128 /* Day3_2_P.playground */,
 				7BCA7F7C298B899300107855 /* Day4_1.playground */,
 				7BCA7F7F298B9B7C00107855 /* Day4_2.playground */,
+				7BB1F394299C79C0006DB1F6 /* Day4_2_P.playground */,
 			);
 			path = codu;
 			sourceTree = "<group>";

@@ -52,7 +52,7 @@ extension String {
 }
 
 func getLevel(_ nums:String,_ start:Int,_ end:Int)->Int{
-    var nums = Array(nums.map{Int(String($0))!}[start...end])
+    var nums = nums.substring(from: start, to: end).map{Int(String($0))!}
     print(nums)
     if nums.filter({$0 != nums[0]}).isEmpty{return 1}
     var minus:[Int] = []
